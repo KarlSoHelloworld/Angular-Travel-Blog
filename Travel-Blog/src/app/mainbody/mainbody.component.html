@@ -1,0 +1,17 @@
+<div class="ui dividing header">
+  <i class="fas fa-newspaper" style="margin-right:0.5em"></i><span>Blog Articles</span>
+  <a routerLink='/articles' style="position: absolute; right: 2%; font-size: 1em">
+    <h6>Details></h6>
+  </a>
+</div>
+<div *ngFor="let article of articles">
+  <h2 class="ui header">
+    <img src={{article.Image}}>
+    <div class="content">
+      <a class="content" routerLink="../detail/{{article.ID}}" style="color: black">{{article.Title}}</a>  
+      <div class="sub header"><a class="sub header" routerLink="../detail/{{article.ID}}">{{article.Description}}</a></div>
+    </div>
+  </h2>
+  <span><a class="sub header" routerLink="../detail/{{article.ID}}"><img src="../../assets/img/short-paragraph.png" style="width:100%"></a></span>
+  <br><br>
+</div>

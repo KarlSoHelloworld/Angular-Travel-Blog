@@ -1,0 +1,60 @@
+<div class="container" id="top">
+  <div class="row">
+    <div class="col-9">
+      <div class="ui dividing header">
+        <i class="fas fa-newspaper" style="margin-right:0.5em"></i><span>Blog Articles</span>
+
+      </div>
+      <div class="ui items">
+        <div class="item" *ngFor="let article of articles">
+          <div class="image">
+            <img src={{article.Image}}>
+          </div>
+
+          <div class="content">
+            <a class="header" routerLink="/detail/{{article.ID}}">{{article.Title}}</a>
+            <div class="meta">
+              <span><img src="../../assets/img/short-paragraph.png" style="width:100%"></span>
+            </div>
+
+            <div class="description">
+              <p></p>
+            </div>
+
+            <div class="extra">
+              {{article.Date}}
+            </div>
+
+          </div>
+        </div>
+
+        <div class="ui pagination menu">
+          <a class="item" (click)="readpage(1)">
+            1
+          </a>
+          <a class="item" (click)="readpage(2)">
+            2
+          </a>
+          <a class="item" (click)="readpage(3)">
+            3
+          </a>
+          <a class="item" (click)="readpage(4)">
+            4
+          </a>
+          <a class="item" (click)="readpage(5)">
+            5
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-3">
+      <app-news></app-news>
+    </div>
+
+  </div>
+
+
+
+</div>

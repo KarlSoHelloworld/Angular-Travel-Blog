@@ -1,4 +1,4 @@
-# Angular-Travel-Blog
+# Angular-Travel-Blog -- For COMP-5321
 A travel blog frontend which was developed by Semantic UI/ Bootstrap/ Angular
 ## 1 Tools
 ### 1.1 Semantic UI

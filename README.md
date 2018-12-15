@@ -13,15 +13,19 @@ Angular is a TypeScript-based open-source front-end web application framework le
 
 ## 2 Application logic
 By using Angular to develop the website, the website uses the route to indicate the flow. Please refer to Figure-2.1.
-
+![Figure-2.1 Route Flow](https://github.com/KarlSoHelloworld/Angular-Travel-Blog/blob/master/READMD%20PICTURES/figure2.1.png)
+#### Figure-2.1 Route Flow
 The flow of user to visit the website is shown as below:
 1.	Users visit the domain name or IP of website without path. Angular will redirect the route to default route – home.
 2.	Users enter the home and browse the webpage. Users can click “Article” button in the menu bar or click “Detail” link in the header of “Blog Article” to enter route – articles.
 3.	By clicking the picture/ title/ descriptions of article, users will enter route -- detail/:id for specific article webpage.
 4.	User can directly use “domain name + Path” to visit the specific page. Please refer to Figure-2.2 to check the example.
-
+![Figure-2.2 Specific Route Example](https://github.com/KarlSoHelloworld/Angular-Travel-Blog/blob/master/READMD%20PICTURES/figure2.2.png)
+#### Figure-2.2 Specific Route Example
 ## 3 Project Structure
-Project is consisted of components. Each component may be the member of other components. Therefore, all the components are re-useable, for example, the “News” component are re-used in different webpage for times. 
+Project is consisted of components. Each component may be the member of other components. Therefore, all the components are re-useable, for example, the “News” component are re-used in different webpage for times. Please refer to Figure-3.1
+![Figure-3.3 Project Structure Diagram](https://github.com/KarlSoHelloworld/Angular-Travel-Blog/blob/master/READMD%20PICTURES/figure3.1.png)
+#### Figure-3.3 Project Structure Diagram
 
 ## 4 Installation Guide
 ## 4.1	Install Angular

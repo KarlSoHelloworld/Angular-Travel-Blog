@@ -1,0 +1,31 @@
+<div class="container" style="margin-top: 30px">
+  <div class="row">
+    <div class="col-0"></div>
+    <div class="ui link cards col-10">
+      <div class="card" *ngFor="let article of articles">
+        <div class="image" style="height:180px;overflow: hidden">
+          <a routerLink="../detail/{{article.ID}}"><img src={{article.Image}} style="width:100%;"></a>
+        </div>
+        <div class="content">
+          <div class="header"><a routerLink="../detail/{{article.ID}}" style="color:#262626">{{article.Title}}</a></div>
+          <div class="meta">
+            <a routerLink="../detail/{{article.ID}}">{{article.Tag}} </a>
+          </div>
+          <div class="description">
+            <a routerLink="../detail/{{article.ID}}"><img src="../../assets/img/short-paragraph.png" style="width:100%"></a>
+          </div>
+        </div>
+        <div class="extra content">
+          <span class="right floated">
+            {{article.Date}}
+          </span>
+          <span>
+            <i class="user icon"></i>
+            {{article.Vistor}}
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="col-0"></div>
+  </div>
+</div>

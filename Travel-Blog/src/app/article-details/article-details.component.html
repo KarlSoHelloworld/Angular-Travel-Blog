@@ -1,0 +1,65 @@
+<div class="container">
+  <div class="row">
+    <div class="col-9">
+      <div *ngIf="article">
+        <h2 class="ui dividing header">
+          {{article.Title}}
+          <div class="ui horizontal label">{{article.Tag}}</div>
+        </h2>
+        <i class="far fa-clock" style="margin-right: 5px"></i><span class="sub header">{{article.Date}}</span>
+        <img class="ui fluid image" src="{{article.Image}}" style="margin: 15px 0 15px 0">
+        <div>
+          <p>{{article.Detail}}</p>
+          <br>
+          <p>{{article.Detail}}</p>
+          <br>
+          <p>{{article.Detail}}</p>
+        </div>
+
+        <!-- comment start -->
+        <div class="ui comments">
+          <h3 class="ui dividing header">Comments</h3>
+          <div class="comment" *ngFor="let com of article.comment">
+            <a class="avatar">
+              <img src="../../assets/img/head-{{com.userid}}.jpg">
+            </a>
+            <div class="content">
+              <a class="author">{{com.comment_user}}</a>
+              <div class="metadata">
+                <span class="date">{{com.time}}</span>
+              </div>
+              <div class="text">
+                {{com.comment}}
+              </div>
+              <div class="actions">
+                <a class="reply">Reply</a>
+              </div>
+            </div>
+          </div>
+       
+          <div *ngIf="article.comment">
+          <form class="ui reply form">
+            <div class="field">
+              <textarea  [(ngModel)]="newComment"  name="newComment" placeholder="Less then 300 words" maxlength="300" style="margin-top: 20px"></textarea> 
+            </div>
+            <div class="ui blue labeled submit icon button" (click)="add()">
+              <i class="icon edit"></i> Add Reply
+            </div>
+          </form>
+        </div>
+        
+        </div>
+        <!-- comment end -->
+    
+      </div>
+
+
+
+
+    </div>
+
+    <div class="col-3">
+      <app-news></app-news>
+    </div>
+  </div>
+</div>

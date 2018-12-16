@@ -45,6 +45,7 @@ Angular requires Node.js version 8.x or 10.x.
 ## 4.3	Run the Application
 ### Step 1: Serve the application
 > cd Travel-Blog
+
 > ng serve –open
 ### Step 2: Viste the website
 > Use the browser to visit “http:\\localhost:4200”. (default setting)
